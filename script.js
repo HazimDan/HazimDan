@@ -212,3 +212,4 @@ function animateCircles() {
 }
 
 animateCircles();
+
