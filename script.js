@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = 200;
@@ -118,8 +118,33 @@ window.addEventListener('load', function(){
 });
 
 var typed = new Typed(".auto-type", {
-    strings: ["Hey There! :)", "My Name is Hazim Danish"],
+    strings: ["Hey There! 😁✌️", "Introducing Hazim Danish"],
     typeSpeed: 100,
     backSpeed: 10,
     loop: true
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const startButton = document.getElementById('startButton');
+
+    startButton.addEventListener('click', function () {
+        const aboutSection = document.getElementById('about');
+
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const value1 = document.getElementById('value-1');
+
+    value1.addEventListener('click', function () {
+        const aboutSection = document.getElementById('about');
+
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
