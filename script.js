@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function () {
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
@@ -148,7 +149,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const workButton = document.getElementById('value-2');
 
+    workButton.addEventListener('click', function () {
+        const workSection = document.getElementById('my-works');
+
+        if (workSection) {
+            workSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const contactButton = document.getElementById('value-3');
+
+    contactButton.addEventListener('click', function () {
+        const contactSection = document.getElementById('card4');
+
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 

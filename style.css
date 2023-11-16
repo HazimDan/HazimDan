@@ -8,8 +8,11 @@ body {
 
 .card4 {
   position: relative;
-  height: 300px;
-  width: 230px;
+  height: 400px;
+  width: 300px;
+  color: white;
+  margin: 0 auto;
+  top: 100px;
 }
 .card4:nth-child(2) {
   filter: hue-rotate(300deg) brightness(1.3);
@@ -24,21 +27,21 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid rgb(81, 0, 255);
   transform: scale(0.8);
-  box-shadow: rgba(255, 0, 0, 1) 0px 30px 70px 0px;
+  box-shadow: rgb(38, 0, 255) 0px 30px 70px 0px;
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .card4 .main {
-  width: 230px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   overflow: hidden;
-  background: red;
+  background: rgb(43, 0, 255);
   background: linear-gradient(
     0deg,
-    #3e0000 0%,
-    rgba(255, 0, 0, 1) 60%,
-    #3e0000 100%
+    #070722 0%,
+    rgb(38, 0, 255) 60%,
+    #070722 0%,
   );
   position: relative;
   clip-path: polygon(
@@ -50,19 +53,19 @@ body {
     40px 100%,
     0 calc(100% - 40px)
   );
-  box-shadow: rgba(255, 0, 0, 1) 0px 7px 29px 0px;
+  box-shadow: rgb(21, 0, 255) 0px 7px 29px 0px;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .card4 .main .top {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 0px;
-  height: 0px;
+  width: 100px; 
+  height: 400px; 
   z-index: 2;
-  border-top: 115px solid black;
-  border-left: 115px solid transparent;
-  border-right: 115px solid transparent;
+  border-top: 120px solid rgb(52, 51, 51);
+  border-left: 100px solid transparent; /* Adjusted for the width */
+  border-right: 100px solid transparent; /* Adjusted for the width */
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .card4 .main .side {
@@ -71,7 +74,7 @@ body {
   top: 0;
   transform: translateX(-50%);
   height: 101%;
-  background: black;
+  background: rgb(52, 51, 51);
   clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
 }
@@ -104,9 +107,9 @@ body {
   transform: translateX(-50%);
   padding: 5px 10px;
   clip-path: polygon(0 0, 100% 0, 81% 100%, 21% 100%);
-  background: black;
+  background: rgb(52, 51, 51);
   border: none;
-  color: white;
+  color: rgb(243, 243, 243);
   display: grid;
   place-content: center;
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -164,12 +167,13 @@ body {
   transition-delay: 0.4s;
 }
 .works {
-  background-color: #f0f0f0; /* Set the background color for the "My Works" section */
+  background-color: rgb(52, 51, 51);
   padding: 20px;
   text-align: center;
 }
 .works h1 {
-  font-family: 'Cookies', sans-serif;;
+  font-family: 'Cookies', sans-serif;
+  color: white;
 }
 
 .card-container3 {
@@ -182,6 +186,7 @@ body {
 .card3 {
   width: 100%;
   border-radius: 20px;
+  height: 700px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -190,7 +195,7 @@ body {
 
 .card3 img {
   width: 100%;
-  height: auto;
+  height: 50%;
   border-radius: 20px 20px 0 0;
 }
 
@@ -271,7 +276,7 @@ button::after {
   color: white;
   background-color: transparent;
   position: relative;
-  margin-left: 41%;
+  margin-left: 40%;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Cambria Math', sans-serif;
@@ -472,7 +477,7 @@ button:hover {
 .wrapper {
   position: absolute;
   width: 100%;
-  height: 3000px;
+  height: 3900px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(2, 0, .6, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   z-index: -1;
@@ -590,7 +595,7 @@ button:hover {
 
 #canvas1 {
   position: absolute;
-  bottom: 2300px;
+  bottom: 3500px;
   left: 50%;
   transform: translateX(-50%);
 }
