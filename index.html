@@ -134,35 +134,42 @@
     <h1>My Works</h1>
     <br>
     <div class="card-container3">
-      <div class="card3">
+      <div class="card3" onclick="showModal('CNY Poster', 'Poster.jpg', 'A vibrant and festive Chinese New Year poster design celebrating the joy and traditions of the holiday season. This application was developed utilizing the Android Studio IDE, employing the Java programming language.')">
         <img src="Poster.jpg" alt="Work 1">
         <h3>CNY Poster</h3>
         <p>A vibrant and festive Chinese New Year poster design celebrating the joy and traditions of the holiday season.</p>
       </div>
-      <div class="card3">
+      <div class="card3" onclick="showModal('Modules App', '1st Pic.jpeg', 'An interactive application for managing and organizing academic modules, facilitating a seamless learning experience. This application was developed utilizing the Android Studio IDE, employing the Java programming language.')">
         <img src="1st Pic.jpeg" alt="Work 2">
         <h3>Modules App</h3>
         <p>An interactive application for managing and organizing academic modules, facilitating a seamless learning experience.</p>
       </div>
-      <div class="card3">
+      <div class="card3" onclick="showModal('Song List App', '2nd Pic.jpeg', 'A music application that allows users to create and manage personalized song lists, enhancing their music listening experience. This application was developed utilizing the Android Studio IDE, employing the Java programming language.')">
         <img src="2nd Pic.jpeg" alt="Work 3">
         <h3>Song List App</h3>
         <p>A music application that allows users to create and manage personalized song lists, enhancing their music listening experience.</p>
       </div>
-      <div class="card3">
+      <div class="card3" onclick="showModal('CineTics', 'CinemaWebsite.jpg', 'An innovative cinema website providing information about movies, showtimes, and a user-friendly booking system for movie enthusiasts. This website was meticulously crafted through the utilization of Visual Studio Code, employing a combination of HTML, CSS, and JavaScript technologies.')">
         <img src="CinemaWebsite.jpg" alt="Work 4">
         <h3>CineTics</h3>
         <p>An innovative cinema website providing information about movies, showtimes, and a user-friendly booking system for movie enthusiasts.</p>
       </div>
-      <div class="card3">
+      <div class="card3" onclick="showModal('World Xplore', 'WX.jpg', 'A travel application that allows users to explore and discover exciting destinations, providing travel information and recommendations. This website was meticulously crafted through the utilization of Visual Studio Code, employing a combination of HTML, CSS, and JavaScript technologies.')">
         <img src="WX.jpg" alt="Work 5">
         <h3>World Xplore</h3>
         <p>A travel application that allows users to explore and discover exciting destinations, providing travel information and recommendations.</p>
       </div>
-      <div class="card3">
+      <div class="card3" onclick="showModal('Okinawa Magazine', 'Magazine.jpg', 'A visually stunning magazine showcasing the beauty and culture of Okinawa, featuring captivating articles and high-quality graphics. This website was meticulously crafted through the utilization of Visual Studio Code, employing a combination of HTML, CSS, and JavaScript technologies.')">
         <img src="Magazine.jpg" alt="Work 6">
         <h3>Okinawa Magazine</h3>
         <p>A visually stunning magazine showcasing the beauty and culture of Okinawa, featuring captivating articles and high-quality graphics.</p>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="Project Image">
+        <p id="modalDescription"></p>
       </div>
     </div>
   </section>
