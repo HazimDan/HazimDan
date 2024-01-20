@@ -260,3 +260,45 @@ function showModal(title, imageSrc, description) {
       closeModal();
     }
   });
+
+  function showWorks(buttonNumber) {
+    var works = document.getElementsByClassName("card3");
+    for (var i = 0; i < works.length; i++) {
+      works[i].style.display = "none";
+    }
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    if (buttonNumber === 1) {
+      button1.classList.add("active");
+      button2.classList.remove("active");
+      var work1 = document.getElementsByClassName("work1");
+      var work2 = document.getElementsByClassName("work6");
+      var work7 = document.getElementsByClassName("work7");
+      var work8 = document.getElementsByClassName("work8");
+      var work9 = document.getElementsByClassName("work9");
+      var work10 = document.getElementsByClassName("work10");
+      
+      work1[0].style.display = "block";
+      work2[0].style.display = "block";
+      work7[0].style.display = "block";
+      work8[0].style.display = "block";
+      work9[0].style.display = "block";
+      work10[0].style.display = "block";
+      
+    } else if (buttonNumber === 2) {
+      button1.classList.remove("active");
+      button2.classList.add("active");
+      var work5 = document.getElementsByClassName("work5");
+      var work4 = document.getElementsByClassName("work4");
+      var work3 = document.getElementsByClassName("work3");
+      var work6 = document.getElementsByClassName("work2");
+      var work11 = document.getElementsByClassName("work11");
+      var work12 = document.getElementsByClassName("work12");
+      work3[0].style.display = "block";
+      work4[0].style.display = "block";
+      work5[0].style.display = "block";
+      work6[0].style.display = "block";
+      work11[0].style.display = "block";
+      work12[0].style.display = "block";
+    }
+  }
